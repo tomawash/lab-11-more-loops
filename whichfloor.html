@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, ititial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+
+		var maximum_stories = 10;
+
+		var num = parseInt(prompt("What floor are you on?"));
+
+		while(num > maximum_stories) {
+			num = parseInt(prompt("You entered: " + num + " but there are only " + maximum_stories + " floors in this building. Try again..."));
+		}
+
+		console.log("Congrats! You work on floor: " + num);
+
+	</script>
+</body>
+</html>

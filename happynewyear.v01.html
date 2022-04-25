@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, ititial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+
+		function countDown(start) {
+			console.log(start);
+			let nextNumber = start - 1;
+
+			if (nextNumber > 0) {
+				countDown(nextNumber);
+			} else {
+				console.log("HAPPY NEW YEAR!");
+			}
+		}
+
+		countDown(10);
+
+	</script>
+</body>
+</html>
